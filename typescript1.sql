@@ -21,7 +21,7 @@
 --
 -- Table structure for table `departments`
 --
-use lourd_db;
+use daryl_db;
 CREATE TABLE `departments` (
   `id` int NOT NULL,
   `abbreviation` varchar(255) NOT NULL,
