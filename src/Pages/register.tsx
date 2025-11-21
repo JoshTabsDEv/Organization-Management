@@ -19,7 +19,7 @@ export default function Register() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post("api/register", form);
+      const res = await axios.post("https://daryl-final.vercel.app/api/register", form);
       setMessage(res.data.message);
       if (res.data.success) setTimeout(() => navigate("/"), 1000);
       else
