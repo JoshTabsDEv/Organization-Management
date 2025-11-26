@@ -777,7 +777,7 @@ const db = mysql.createPool({
 
 // GOOGLE AUTH SETUP
 const client = new OAuth2Client(
-  "1016616466017-03fsmris44cv89qnelaed641obt80dmh.apps.googleusercontent.com"
+  "479399301536-idf2rpue77hqisbj9iore2bp64815qt4.apps.googleusercontent.com"
 );
 
 // ======================= REGISTER =======================
@@ -879,7 +879,7 @@ app.post("/google-login", async (req, res) => {
     const ticket = await client.verifyIdToken({
       idToken: token,
       audience:
-        "1016616466017-03fsmris44cv89qnelaed641obt80dmh.apps.googleusercontent.com",
+        "479399301536-idf2rpue77hqisbj9iore2bp64815qt4.apps.googleusercontent.com",
     });
 
     const payload = ticket.getPayload();
